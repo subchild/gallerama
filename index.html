@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="en-US"> 
+    <head>
+        <title>Gallerama</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">  
+        <style>
+            body {
+                background-color: #000; 
+                margin: 0; 
+                padding: 0; 
+                height: 100%; 
+                width: 100%;
+            }       
+            .full {
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.4) 100%);
+            }
+            .main {
+                margin: 60px auto 0 auto;
+                padding: 50px;
+                width: 550px;
+            }
+            img {
+                width: 300px;
+                margin-left: -2px;
+                margin-bottom: 30px;
+            }
+            p {
+                color: white;
+                font-family: 'Rokkitt', sans-serif;
+                /* font-size:20px; */
+                font-size: calc(18px + 20 * ((100vw - 500px) / (1600 - 500)));
+            } 
+            a {
+                color: #f30;
+                text-decoration: none;
+            }
+            .footer {
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+                font-size: 14px;
+                color: white;
+                font-family: 'Rokkitt', sans-serif;
+            }
+        </style>
+        <script src="//code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery.transit.min.js"></script>
+        <script src="js/jquery.slideshowify.min.js"></script>
+        <script type="text/javascript">
+        $.slideshowify({
+            dataUrl  : "js/photos.json",
+            randomize    : true,
+            fadeInSpeed  : 1500,
+            fadeOutSpeed : 1500,
+            aniSpeedMin  : 25000,
+            aniSpeedMax  : 30000
+        });
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK8FFHM6M6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CK8FFHM6M6');
+        </script>
+    </head>
+    <body>
+        <div class="full">
+            <div class="main">
+                <img src="gallerama-logo.svg">
+                <p>After nearly 15 years of serving its community of photographers, Gallerama was retired in January 2021.</p>
+                <p>We hope that you enjoyed using our service as much as we enjoyed making it, and we thank you for your support over the years.</p>
+                <p class="sig">- Alex, DS and SK</p>
+            </div>
+        </div>
+        <div class="footer">
+            This page uses <a href="http://slideshowify.com" target="_blank">slideshowify.com</a>. For inquiries, DM <a href="https://twitter.com/alexkolund">@AlexKolund</a>.
+        </div>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-443787-5");
+                pageTracker._trackPageview();
+            } catch(err) {}</script>
+    </body>
+</html>
